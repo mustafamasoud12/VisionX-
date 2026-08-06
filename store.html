@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionX Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">VisionX</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="cart.html">Cart</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+</header>
+
+<main>
+
+    <h1 class="store-title">
+        🌱 Plant Treatment Store
+    </h1>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+    </div>
+    <div class="filter-buttons">
+
+<button onclick="filterProducts('all')">All</button>
+
+<button onclick="filterProducts('fertilizer')">🌱 Fertilizers</button>
+
+<button onclick="filterProducts('fungicide')">🧪 Fungicides</button>
+
+<button onclick="filterProducts('insecticide')">🐛 Insecticides</button>
+
+</div>
+
+    <div id="store-container" class="store-container">
+
+    </div>
+
+</main>
+
+<script src="theme.js"></script>
+<script src="store.js"></script>
+
+</body>
+
+</html>

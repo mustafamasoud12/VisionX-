@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionX - Plant Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-transition-overlay" id="transitionOverlay"></div>
+    <header>
+    <div class="logo">VisionX</div>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="store.html">Store</a>
+    <a href="cart.html">Cart</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+</header>
+
+    <main>
+        <section class="hero">
+            <h1>DIAGNOSE PLANT DISEASES</h1>
+            <p>A PROJECT BY TEAM VISIONX</p>
+
+            
+            <div id="drop-zone" class="drop-zone">
+                <label for="image-upload" class="upload-btn">UPLOAD PHOTO</label>
+                <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                <p class="drop-hint">or drag & drop an image here</p>
+            </div>
+
+            <p id="error-msg" class="error-msg"></p>
+
+            
+            <div id="preview-area"></div>
+
+            
+            <button id="analyze-btn" class="analyze-btn" style="display:none;">Analyze Photo</button>
+
+            
+            <div id="loading" class="loading" style="display:none;">
+                <div class="spinner"></div>
+                <p>Analyzing your plant...</p>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="results-panel" id="results-panel">
+                <h3>Analysis Overview</h3>
+                <div id="results-content" class="results-content">
+                    <p class="placeholder-text">Upload a photo to see the analysis here.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="history-section">
+    <div class="history-header">
+        <h3>Recent Uploads</h3>
+        <button id="clear-history-btn" class="clear-history-btn">Clear</button>
+    </div>
+    <div id="history-list" class="history-list">
+        <p class="placeholder-text">No history yet.</p>
+    </div>
+</section>
+    </main>
+
+    <section class="features">
+        <div class="card">
+            <h3>AI Diagnosis</h3>
+            <p>Instant plant disease detection using deep learning models.</p>
+        </div>
+        <div class="card">
+            <h3>Fast Results</h3>
+            <p>Get your crop analysis report in just a few seconds.</p>
+        </div>
+    </section>
+
+   <script src="theme.js"></script>
+<script src="script.js"></script> 
